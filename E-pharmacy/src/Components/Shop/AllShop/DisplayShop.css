@@ -1,0 +1,145 @@
+.shop-container {
+    padding-bottom: 10rem;
+    padding-top: 8rem;
+    background-color: #f0f4f8;
+    height: 100vh;
+}
+
+.shop-header {
+    width: 100%;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.shop-title {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #2d3748;
+}
+
+.shop-subtitle {
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+.cards-container {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.shop-card {
+    padding-bottom: 2rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    width: calc(33.333% - 1.5rem);
+    height: 400px;
+}
+
+.card-banner {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.shop-logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -2rem;
+    z-index: 2;
+}
+
+.status-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.open {
+    color: #0f9d58;
+    background-color: #dcfce7;
+}
+
+.closed {
+    color: #db4437;
+    background-color: #fcd8db;
+}
+
+.shop-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.details {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.rating {
+    color: #f1c40f;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.phone-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.visit-button {
+    display: flex;
+    justify-content: center;
+}
+
+.visit-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.visit-btn:hover {
+    background-color: #01939a;
+}
+
+.visit-btn:focus {
+    outline: none;
+}

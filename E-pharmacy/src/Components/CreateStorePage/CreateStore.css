@@ -1,0 +1,92 @@
+.container {
+  background-color: hsla(204, 100%, 90%,0.2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.header {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.heading {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+input {
+  width: 300px;
+  height: 2.5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+}
+
+.input-container {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+label {
+  font-size: 1rem;
+  color: #4a5568;
+  flex: 0.6;
+}
+
+select {
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #4dc0b5;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #01939a;
+}
+
+.con {
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin-left: 50px;
+}
+select
+{
+  width: 300px;
+  height: 2.5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+}
+
+.button-container
+{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+
+.button-container button
+{
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: gray;
+  background-color: hsl(183, 99%, 90%);
+}

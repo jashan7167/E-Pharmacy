@@ -1,0 +1,40 @@
+.shop-details-container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+  padding: 16px;
+  max-width: 1280px; /* Adjust as necessary */
+}
+
+@media (min-width: 768px) {
+  .shop-details-container {
+    flex-direction: row;
+    padding: 24px;
+  }
+}
+
+.shop-sidebar {
+  width: 100%;
+  background-color: white;
+  order: -1;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .shop-sidebar {
+    width: 25%;
+    order: 1;
+  }
+}
+
+.shop-main-content {
+  width: 100%;
+  order: 1;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .shop-main-content {
+    width: 75%;
+  }
+}

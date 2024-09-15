@@ -1,0 +1,125 @@
+.login-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.background-image {
+  flex: 1;
+  background-image: url("https://i.ibb.co/9hFrQqt/medicine-home-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* For older browsers */
+}
+.background-image p {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  color: hsl(211, 100%, 20%);
+  font-size: 2rem;
+  z-index: 1; 
+}
+
+.login-form {
+  color:  hsl(211, 100%, 20%);
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: hsla(0, 0%, 90%,0.6);
+}
+
+.form-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 80px;
+}
+
+.form {
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 2px;
+  align-items: center;
+}
+.checkbox
+{
+  display: flex;
+  align-items: center;
+}
+/* .checkbox-group label
+{
+  width: ;
+} */
+
+.checkbox-group input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.forgot-password-link {
+  margin-left: auto;
+  font-size: 14px;
+  color: #777;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: hsl(211, 100%, 50%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

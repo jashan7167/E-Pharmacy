@@ -1,0 +1,131 @@
+/* Navbar */
+/* Navbar */
+.navbar {
+  background-color: #fafafa;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Center the content horizontally */
+  align-items: center;
+  gap: 200px;
+  max-height: 90px;
+  width: 70vw; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the navbar within the .headerContainer */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Header container */
+.headerContainer {
+  background-color: #fafafa;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 2px solid hsl(211, 100%, 90%);
+}
+.navbar.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Left section */
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+/* Right section */
+.rightSection button{
+  background: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  padding: 10px 20px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+}
+
+/* NavMenu */
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 780px) {
+  .leftSection {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active:hover {
+    background-color: hsl(0, 0%, 80%);
+  }
+
+  .rightSection {
+    display: none;
+  }
+
+  .navMenu {
+    position: absolute;
+    flex-direction: column;
+    gap: 0;
+    top: 70px;
+    left: -100%;
+    text-align: start;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+    background-color: aliceblue;
+    padding: 10px;
+  }
+
+  .navMenu.active {
+    left: 0;
+  }
+
+  .navMenu li {
+    margin: 16px 0;
+  }
+
+  .bar {
+    background-color: #120f0b;
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin: 5px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  /* adding active class to the bars */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
